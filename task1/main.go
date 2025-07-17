@@ -14,10 +14,10 @@ func main() {
 	reader := bufio.NewReader(os.Stdin)
 	fmt.Print("Enter slice length (it must be an integer value) =")
 
-	v, _ := reader.ReadString('\n')
-	v = strings.TrimSpace(v)
+	val, _ := reader.ReadString('\n')
+	val = strings.TrimSpace(val)
 
-	value, err := strconv.Atoi(v)
+	value, err := strconv.Atoi(val)
 	if err != nil || value <= 0 {
 		fmt.Println("Error:Bad value try again\n", err)
 		return
