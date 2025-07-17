@@ -12,7 +12,7 @@ func main() {
 	reader := bufio.NewReader(os.Stdin)
 	letters := make(map[rune]int)
 
-	fmt.Println("Enter your word:")
+	fmt.Print("Enter your word: ")
 	val, err := reader.ReadString('\n')
 	if err != nil {
 		fmt.Println("Error in parsing delimeter")
